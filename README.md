@@ -74,3 +74,4 @@ mvn clean install
 
 ## Persiapan
 - Plugin: protocal buffer di IntelliJ IDEA
+
