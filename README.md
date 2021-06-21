@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+## Tech
+- Maven Project
+- Grpc
 
-    <groupId>com.rosyidgrobogan</groupId>
-    <artifactId>belajar-protobuf</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+## Dependencies
+```
     <dependencies>
         <dependency>
             <groupId>io.grpc</groupId>
@@ -21,7 +17,10 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+```
 
+build
+```
     <build>
         <extensions>
             <extension>
@@ -42,7 +41,7 @@
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
-                <version>0.6.1</version>
+                <version>0.5.1</version>
                 <configuration>
                     <protocArtifact>
                         com.google.protobuf:protoc:3.6.1:exe:${os.detected.classifier}
@@ -66,5 +65,12 @@
             </plugin>
         </plugins>
     </build>
+```
 
-</project>
+Setelah menambahkan package, kita perlu memperbarui packagenya
+```
+mvn clean install
+```
+
+## Persiapan
+- Plugin: protocal buffer di IntelliJ IDEA
