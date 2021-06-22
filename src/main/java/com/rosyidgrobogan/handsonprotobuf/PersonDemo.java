@@ -11,5 +11,7 @@ public class PersonDemo {
                 .setName("Rosyid")
                 .setAge(25)
                 .build();
+
+        System.out.println(rosyid);
     }
 }
