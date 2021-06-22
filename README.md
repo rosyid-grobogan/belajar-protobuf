@@ -1,3 +1,11 @@
+## Cara Penggunaan
+Persiapan Project
+```
+git clone git@github.com:rosyid-grobogan/handson-protobuf.git
+cd handson-protobuf
+mvn clean install
+```
+
 ## Tech
 - Maven Project
 - Grpc
